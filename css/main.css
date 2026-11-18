@@ -1,3 +1,224 @@
+/* HOME PAGE */
+
+/* Font: tambahkan di <head> HTML (sebelum file css):
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+*/
+
+:root {
+    --bg-cream: #fffcf5;
+    --green-dark: #0b4f1f;
+    --green-brand: #6fa100;
+    --green-brand-hover: #5c8700;
+    --red-price: #a80000;
+    --text-dark: #0a0a0a;
+    --text-body: #1c1c1c;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-body);
+}
+
 #logo{
     width: 150px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: var(--bg-cream);
+    padding: 1.25rem 0;
+}
+
+.navbar .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+    color: var(--green-brand);
+}
+
+.btn-wa {
+    background-color: var(--green-dark);
+    color: #fff;
+    font-weight: 500;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    border: 2px solid var(--green-dark);
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.btn-wa:hover,
+.btn-wa:focus-visible {
+    background-color: transparent;
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+/* ================= HERO ================= */
+.hero {
+    background-color: var(--bg-cream);
+    padding: 4rem 0 6rem;
+    overflow: hidden;
+}
+
+/* jarak antara teks kiri dan visual kanan */
+@media (min-width: 992px) {
+    .hero .row {
+        --bs-gutter-x: 7rem;
+    }
+}
+
+/* --- teks kiri --- */
+.hero-title {
+    font-size: clamp(2.75rem, 7vw, 5.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--text-dark);
+    margin-bottom: 1.75rem;
+}
+
+.hero-desc {
+    max-width: 32rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-body);
+    margin-bottom: 2.25rem;
+}
+
+.btn-umrah {
+    background-color: var(--green-brand);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: .85rem 1.1rem;
+    border-radius: .5rem;
+    border: none;
+    transition: background-color .2s ease;
+}
+
+.btn-umrah:hover,
+.btn-umrah:focus-visible {
+    background-color: var(--green-brand-hover);
+    color: #fff;
+}
+
+/* --- visual kanan --- */
+.hero-visual {
+    /* ruang bawah agar card yang keluar dari gambar tidak terpotong */
+    padding-bottom: 3.5rem;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    max-width: 37rem;
+    aspect-ratio: 5 / 4.8;
+    object-fit: cover;
+    margin-left: auto;
+    border-radius: 0;
+}
+
+/* placeholder sementara (pakai <div class="hero-img hero-img-placeholder"></div>) */
+.hero-img-placeholder {
+    background-color: #f8f8f8;
+    background-image:
+        linear-gradient(45deg, #e8e8e8 25%, transparent 25%, transparent 75%, #e8e8e8 75%),
+        linear-gradient(45deg, #e8e8e8 25%, transparent 25%, transparent 75%, #e8e8e8 75%);
+    background-size: 44px 44px;
+    background-position: 0 0, 22px 22px;
+}
+
+.package-card {
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 100%;
+    max-width: 34rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem 2rem 1.75rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .12);
+}
+
+.package-label {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: .5rem;
+}
+
+.package-title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+}
+
+.package-price {
+    font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--red-price);
+    margin-bottom: 1.25rem;
+}
+
+.package-price small {
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-left: .15rem;
+}
+
+.package-note {
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991.98px) {
+    .navbar .btn-wa {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    .hero {
+        padding: 2.5rem 0 4rem;
+    }
+
+    .hero-text {
+        margin-bottom: 3rem;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .package-card {
+        left: 1rem;
+        right: 1rem;
+        width: auto;
+        max-width: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .package-card {
+        left: .5rem;
+        right: .5rem;
+        padding: 1.5rem 1.25rem;
+        border-radius: 1.5rem;
+    }
 }
