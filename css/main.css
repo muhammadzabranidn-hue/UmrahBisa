@@ -223,3 +223,323 @@ body {
         padding: 1.25rem;
     }
 }
+
+
+/* =====================================================
+   SECTIONS LANJUTAN (About, Paket, FAQ, Contact, Footer)
+   ===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* ---------- Umum ---------- */
+.section {
+    padding: 6rem 0;
+}
+
+.section-alt {
+    background-color: #fff;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--green-brand);
+    margin-bottom: .75rem;
+}
+
+.section-label-light {
+    color: #bfe36a;
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+    max-width: 40rem;
+}
+
+.section-desc {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-body);
+    max-width: 36rem;
+}
+
+.img-placeholder {
+    background-color: #f8f8f8;
+    background-image:
+        linear-gradient(45deg, #e8e8e8 25%, transparent 25%, transparent 75%, #e8e8e8 75%),
+        linear-gradient(45deg, #e8e8e8 25%, transparent 25%, transparent 75%, #e8e8e8 75%);
+    background-size: 44px 44px;
+    background-position: 0 0, 22px 22px;
+}
+
+/* ---------- About ---------- */
+.about-img {
+    width: 100%;
+    aspect-ratio: 4 / 4.5;
+    border-radius: 2rem;
+}
+
+.about-stats {
+    margin-top: 2rem;
+}
+
+.stat-item {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .07);
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--red-price);
+    margin-bottom: .35rem;
+}
+
+.stat-item span {
+    font-size: .9rem;
+    color: var(--text-body);
+}
+
+/* ---------- Paket Umrah ---------- */
+.umrah-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-cream);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.umrah-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .14);
+}
+
+.umrah-card-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.umrah-card-price {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--red-price);
+    margin-bottom: 1.5rem;
+}
+
+.umrah-card-price small {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-left: .15rem;
+}
+
+.umrah-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    flex-grow: 1;
+}
+
+.umrah-card-list li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: .7rem;
+    font-size: .95rem;
+    color: var(--text-body);
+}
+
+.umrah-card-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .35rem;
+    width: .65rem;
+    height: .65rem;
+    border-radius: 50%;
+    background-color: var(--green-brand);
+}
+
+.umrah-card .btn-umrah {
+    text-align: center;
+}
+
+/* kartu unggulan */
+.umrah-card-featured {
+    background-color: var(--green-dark);
+}
+
+.umrah-card-featured .umrah-card-title,
+.umrah-card-featured .umrah-card-list li {
+    color: #fff;
+}
+
+.umrah-card-featured .umrah-card-price {
+    color: #ff8a8a;
+}
+
+.umrah-card-featured .umrah-card-list li::before {
+    background-color: #bfe36a;
+}
+
+.umrah-badge {
+    align-self: flex-start;
+    background-color: var(--green-brand);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .3rem .8rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .umrah-card-featured {
+        transform: translateY(-1rem);
+    }
+
+    .umrah-card-featured:hover {
+        transform: translateY(-1.4rem);
+    }
+}
+
+/* ---------- FAQ ---------- */
+.faq-accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: #fff;
+    --bs-accordion-active-color: var(--text-dark);
+}
+
+.faq-accordion .accordion-item {
+    border: 0;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+}
+
+.faq-accordion .accordion-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background-color: #fff;
+    padding: 1.25rem 1.5rem;
+    box-shadow: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    color: var(--green-dark);
+}
+
+.faq-accordion .accordion-body {
+    padding: 0 1.5rem 1.5rem;
+    line-height: 1.75;
+    color: var(--text-body);
+}
+
+/* ---------- Contact ---------- */
+.contact-box {
+    background-color: var(--green-dark);
+    border-radius: 2rem;
+    padding: 4rem 3rem;
+    color: #fff;
+}
+
+.contact-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.contact-desc {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.btn-lg-custom {
+    padding: 1rem 1.6rem;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.contact-list li:last-child {
+    border-bottom: 0;
+}
+
+.contact-list span {
+    display: block;
+    font-size: .85rem;
+    color: #bfe36a;
+    margin-bottom: .25rem;
+}
+
+.contact-list a,
+.contact-list p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding: 1.5rem 0 2rem;
+    font-size: .9rem;
+    color: var(--text-body);
+}
+
+/* ---------- Responsive tambahan ---------- */
+@media (max-width: 991.98px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .contact-box {
+        padding: 2.5rem 1.5rem;
+    }
+}
