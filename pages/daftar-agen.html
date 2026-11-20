@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daftar Agen - UmrahBISA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a href="../index.html" class="navbar-brand fw-bold fs-4">
+            <img src="../assets/img/LogoUmrahBisa.png" alt="UmrahBISA - Semua BISA Umrah" id="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+            aria-label="Buka menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#paket">Paket Umrah</a></li>
+                <li class="nav-item"><a class="nav-link active" href="daftar-agen.html" aria-current="page">Daftar Agen</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="https://wa.me/628159888154" class="btn btn-wa rounded-pill px-4" target="_blank" rel="noopener">
+                Chat WhatsApp
+            </a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb page-breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Daftar Agen</li>
+            </ol>
+        </nav>
+
+        <div class="row align-items-end g-4">
+            <div class="col-lg-7">
+                <span class="section-label">Kantor Perwakilan Agen</span>
+                <h1 class="page-title">Daftar Agen<br>Umrah BISA</h1>
+                <p class="section-desc mb-0">
+                    Temukan agen Umrah BISA terdekat di kota Anda. Hubungi langsung
+                    melalui WhatsApp untuk konsultasi paket dan pendaftaran.
+                </p>
+            </div>
+
+            <div class="col-lg-5">
+                <label for="agentSearch" class="visually-hidden">Cari agen</label>
+                <div class="agent-search">
+                    <input type="search" id="agentSearch" class="form-control"
+                        placeholder="Cari kota atau nama agen..." autocomplete="off">
+                </div>
+                <p class="agent-count" id="agentCount" aria-live="polite">Menampilkan 33 agen</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DAFTAR AGEN ================= -->
+<section class="section pt-0" id="daftar">
+    <div class="container">
+        <div class="row g-4" id="agentGrid">
+                <div class="col-md-6 col-lg-4 agent-item" data-search="pekanbaru hasbi munawar koperasi aus">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">01</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Pekanbaru</h3>
+                        <p class="agent-name">Hasbi Munawar</p>
+                        <span class="agent-org">Koperasi AUS</span>
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6281328057375?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0813-2805-7375</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="depok kota depok niswah hasanah kareem bil qur’an">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">02</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Depok Kota Depok</h3>
+                        <p class="agent-name">Niswah Hasanah</p>
+                        <span class="agent-org">Kareem Bil Qur’an</span>
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6281352247224?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0813-5224-7224</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="jakarta timur cakung barat dian indah cahayati ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">03</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Jakarta Timur Cakung Barat</h3>
+                        <p class="agent-name">Dian Indah Cahayati</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/628988058709?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0898-8058-709</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="cikarang pusat kab. bekasi benta antari ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">04</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Cikarang Pusat Kab. Bekasi</h3>
+                        <p class="agent-name">Benta Antari</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6282130303092?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0821-3030-3092</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="cikarang selatan kab. bekasi teguh sukoco ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">05</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Cikarang Selatan Kab. Bekasi</h3>
+                        <p class="agent-name">Teguh Sukoco</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6281381759835?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0813-8175-9835</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="pamulang tangerang selatan andy hidayat kopi toedjoeh">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">06</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Pamulang Tangerang Selatan</h3>
+                        <p class="agent-name">Andy Hidayat</p>
+                        <span class="agent-org">Kopi Toedjoeh</span>
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6281908447111?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0819-0844-7111</a>
+                            <a href="https://wa.me/628561200070?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0856-120-0070</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="metro barat lampung arif metrodistromuslim">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">07</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Metro Barat Lampung</h3>
+                        <p class="agent-name">Arif</p>
+                        <span class="agent-org">metrodistromuslim</span>
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6285234567883?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0852-3456-7883</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="semarang ngaliyan fia ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">08</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Semarang Ngaliyan</h3>
+                        <p class="agent-name">Fia</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6282325603630?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0823-2560-3630</a>
+                            <a href="https://wa.me/62895423520050?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0895-42352-0050</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="metro pusat lampung amirudin sattari ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">09</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Metro Pusat Lampung</h3>
+                        <p class="agent-name">Amirudin Sattari</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/6281272668969?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0812-7266-8969</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 agent-item" data-search="ciwaringin kab cirebon drg. risard sunaryo ">
+                    <article class="agent-card h-100">
+                        <span class="agent-number">10</span>
+                        <small class="package-label">Umrah BISA Cab.</small>
+                        <h3 class="agent-city">Ciwaringin Kab Cirebon</h3>
+                        <p class="agent-name">drg. Risard Sunaryo</p>
+                        
+                        <div class="agent-contacts">
+                            <a href="https://wa.me/62811237011?text=Assalamualaikum%2C%20saya%20ingin%20info%20paket%20umrah" class="agent-phone" target="_blank" rel="noopener">0811-237-011</a>
+                        </div>
+                    </article>
+                </div>
+                
+</main>
+
+<footer class="site-footer">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 PT. Alzam Mandiri Wisata. Semua BISA Umrah.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Pencarian agen (filter di sisi browser)
+    (function () {
+        var input = document.getElementById('agentSearch');
+        var items = document.querySelectorAll('.agent-item');
+        var count = document.getElementById('agentCount');
+        var empty = document.getElementById('agentEmpty');
+
+        input.addEventListener('input', function () {
+            var q = input.value.trim().toLowerCase();
+            var shown = 0;
+            items.forEach(function (el) {
+                var match = el.dataset.search.indexOf(q) !== -1;
+                el.classList.toggle('d-none', !match);
+                if (match) shown++;
+            });
+            count.textContent = 'Menampilkan ' + shown + ' agen';
+            empty.classList.toggle('d-none', shown !== 0);
+        });
+    })();
+</script>
+</body>
+</html>
