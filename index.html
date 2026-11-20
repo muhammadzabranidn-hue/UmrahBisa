@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umrah Bisa - Semua Bisa Umrah Insya Allah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UmrahBISA - Semua BISA Umrah</title>
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" href="assets/img/LogoUmrahBisa.png">
 </head>
 <body>
+
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
@@ -20,7 +25,6 @@
             <img src="assets/img/LogoUmrahBisa.png" alt="UmrahBISA - Semua BISA Umrah" id="logo">
         </a>
 
-        <!-- tombol hamburger (muncul di mobile) -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
             aria-label="Buka menu">
@@ -30,10 +34,9 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#agen">Daftar Agen</a></li>
-                <li class="nav-item"><a class="nav-link" href="#haji-furoda">Haji Furoda</a></li>
-                <li class="nav-item"><a class="nav-link" href="#haji-khusus">Haji Khusus</a></li>
+                <li class="nav-item"><a class="nav-link" href="#paket">Paket Umrah</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
 
             <a href="https://wa.me/62XXXXXXXXXX" class="btn btn-wa rounded-pill px-4" target="_blank" rel="noopener">
@@ -43,25 +46,27 @@
     </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
+<main>
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="home">
     <div class="container">
         <div class="row align-items-center">
 
-            <!-- Kiri: teks -->
             <div class="col-lg-6 hero-text">
                 <h1 class="hero-title">Semua<br>Bisa Umrah<br>Insya Allah</h1>
                 <p class="hero-desc">
                     Alhamdulillah PT. Alzam Mandiri Wisata merupakan travel umrah berijin resmi
-                    yang berdisi sejak 2020 dan mendapatkan ijin penyelenggaraan umrah pertama
+                    yang berdiri sejak 2020 dan mendapatkan ijin penyelenggaraan umrah pertama
                     kalinya pada tahun 2022.
                 </p>
                 <a href="#paket" class="btn btn-umrah">Lihat Paket Umrah</a>
             </div>
 
-            <!-- Kanan: gambar + card paket -->
             <div class="col-lg-6 hero-visual position-relative">
-                <img src="assets/img/hero-image.jpg" alt="Jamaah umrah di Masjidil Haram" class="hero-img img-fluid">
+                <!-- Placeholder sementara. Ganti dengan:
+                <img src="assets/img/hero-image.jpg" alt="Jamaah umrah di Masjidil Haram" class="hero-img img-fluid"> -->
+                <div class="hero-img hero-img-placeholder" role="img" aria-label="Foto jamaah umrah"></div>
 
                 <div class="package-card">
                     <small class="package-label">Paket Unggulan</small>
@@ -69,63 +74,59 @@
                     <p class="package-price">
                         30.000.000<small>/person</small>
                     </p>
-                    <p class="package-note mb-0">DP 5jt Pelunasan H-30</p>
+                    <p class="package-note mb-0">DP 5jt Pelunasan H-...</p>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-    <section class="about">
-        <div class="">
+
+<!-- ================= 2. ABOUT ================= -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <!-- Ganti dengan foto asli -->
+                <div class="about-img img-placeholder" role="img" aria-label="Foto tim UmrahBISA"></div>
+            </div>
+
+            <div class="col-lg-7">
+                <span class="section-label">Tentang Kami</span>
+                <h2 class="section-title">Perjalanan ibadah yang nyaman, amanah, dan terpercaya</h2>
+                <p class="section-desc">
+                    PT. Alzam Mandiri Wisata hadir untuk membantu siapa saja yang ingin
+                    menunaikan ibadah umrah dengan tenang. Kami berijin resmi dan berkomitmen
+                    memberikan pelayanan terbaik dari keberangkatan hingga kembali ke tanah air.
+                </p>
+
+                <div class="row g-3 about-stats">
+                    <div class="col-sm-4">
+                        <div class="stat-item">
+                            <strong>2020</strong>
+                            <span>Mulai berdiri</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="stat-item">
+                            <strong>2022</strong>
+                            <span>Ijin penyelenggaraan umrah</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="stat-item">
+                            <strong>Resmi</strong>
+                            <span>Travel umrah berijin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="">
+    </div>
+</section>
 
-        </div>
-        <div class="">
-
-        </div>
-    </section>
-    <section class="paket">
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-
-    </section>
-    <section class="qna">
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-    </section>
-    <section class="contact">
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
-    </section>
-    <footer class="">
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
