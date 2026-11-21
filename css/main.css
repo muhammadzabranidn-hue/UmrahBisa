@@ -1827,3 +1827,91 @@ body {
     color: var(--text-dark);
 }
 
+/* ---------- Legalitas ---------- */
+.legal-list {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.legal-card {
+    background-color: var(--bg-cream);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .07);
+}
+
+.legal-tag {
+    display: inline-block;
+    background-color: var(--green-dark);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .3rem .8rem;
+    border-radius: 2rem;
+    margin-bottom: .75rem;
+}
+
+.legal-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: .5rem;
+}
+
+.legal-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--red-price);
+    margin-bottom: .5rem;
+    overflow-wrap: anywhere;
+}
+
+.legal-note {
+    font-size: .95rem;
+    color: var(--text-body);
+    margin-bottom: .75rem;
+}
+
+.legal-link {
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.legal-link:hover {
+    color: var(--green-brand);
+    text-decoration: underline;
+}
+
+.doc-card {
+    margin: 0;
+    background-color: var(--bg-cream);
+    border-radius: 1.75rem;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.doc-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.doc-card figcaption {
+    padding: .9rem .5rem .25rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--text-body);
+    text-align: center;
+}
+
+.doc-card-portrait {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
