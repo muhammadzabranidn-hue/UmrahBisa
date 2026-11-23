@@ -1,0 +1,80 @@
+/* =====================================================
+   PAKET UMRAH (pages/paket-umrah.html)
+   Hanya style khusus halaman Paket Umrah. Style bersama ada di base.css.
+   ===================================================== */
+
+/* ---------- Brosur paket ---------- */
+.brochure-card {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .12);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brochure-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+.brochure-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.brochure-link {
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.brochure-link:hover {
+    color: var(--green-brand);
+    text-decoration: underline;
+}
+
+.brochure-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+    padding: 1.75rem;
+}
+
+.brochure-info strong {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.brochure-info span {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.brochure-info .btn {
+    margin-top: .5rem;
+}
+
+.brochure-cs {
+    display: flex;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 991.98px) {
+    .brochure-card {
+        margin-bottom: 1rem;
+    }
+}
