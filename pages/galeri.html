@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galeri Umrah - UmrahBISA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/galeri.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a href="../index.html" class="navbar-brand fw-bold fs-4">
+            <img src="../assets/img/LogoUmrahBisa.png" alt="UmrahBISA - Semua BISA Umrah" id="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+            aria-label="Buka menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="galeri.html" aria-current="page">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="paket-umrah.html">Paket Umrah</a></li>
+                <li class="nav-item"><a class="nav-link" href="daftar-agen.html">Daftar Agen</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="https://wa.me/628159888154" class="btn btn-wa rounded-pill px-4" target="_blank" rel="noopener">
+                Chat WhatsApp
+            </a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb page-breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Galeri</li>
+            </ol>
+        </nav>
+
+        <div class="row align-items-end g-5">
+            <div class="col-lg-7">
+                <span class="section-label">Galeri Kegiatan</span>
+                <h1 class="page-title">Galeri<br>Umrah BISA</h1>
+                <p class="section-desc mb-0">
+                    Alhamdulillah, Umrah BISA memberangkatkan 4-8 grup per bulan dengan ribuan
+                    jamaah yang berangkat setiap tahun. Berikut potret perjalanan dan kegiatan kami.
+                </p>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <strong>4-8</strong>
+                            <span>Grup berangkat per bulan</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <strong>Ribuan</strong>
+                            <span>Jamaah berangkat per tahun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= GALERI ================= -->
+<section class="section pt-0" id="galeri">
+    <div class="container">
+
+        <div class="package-filter" role="group" aria-label="Filter kategori foto">
+            <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+            <button type="button" class="filter-btn" data-filter="keberangkatan">Keberangkatan</button>
+            <button type="button" class="filter-btn" data-filter="ziarah">Tempat Bersejarah</button>
+            <button type="button" class="filter-btn" data-filter="pelatihan">Kajian &amp; Pelatihan</button>
+            <button type="button" class="filter-btn" data-filter="plus">Umrah Plus</button>
+        </div>
+
+        <!-- Foto sementara diambil dari umrahbisa.com. Untuk produksi, unduh ke assets/img/galeri/ lalu ganti src dan data-full. -->
+<div class="galeri-grid" id="galeriGrid">
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-2-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-2-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-3-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-3-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-4-1024x577.jpg" data-caption="Jabal Nur" aria-label="Perbesar foto: Jabal Nur">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-4-1024x577.jpg" alt="Jabal Nur" loading="lazy">
+            <figcaption>Jabal Nur</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-1024x577.jpg" data-caption="Jabal Nur" aria-label="Perbesar foto: Jabal Nur">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-31-1024x577.jpg" alt="Jabal Nur" loading="lazy">
+            <figcaption>Jabal Nur</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-32-1024x577.jpg" data-caption="Museum Wahyu" aria-label="Perbesar foto: Museum Wahyu">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-24-32-1024x577.jpg" alt="Museum Wahyu" loading="lazy">
+            <figcaption>Museum Wahyu</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-31-16-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2024/05/photo_2024-05-15_08-31-16-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/452917109_10234212568518427_2443037613172361962_n-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/452917109_10234212568518427_2443037613172361962_n-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="pelatihan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/453536782_10234267061640721_2979190730231692996_n-1024x768.jpg" data-caption="Kajian di Pelataran Nabawi" aria-label="Perbesar foto: Kajian di Pelataran Nabawi">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/453536782_10234267061640721_2979190730231692996_n-1024x768.jpg" alt="Kajian di Pelataran Nabawi" loading="lazy">
+            <figcaption>Kajian di Pelataran Nabawi</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/454938801_10234422331722376_3820133127477187806_n-1024x768.jpg" data-caption="Masjid Ibnu Abbas Thaif" aria-label="Perbesar foto: Masjid Ibnu Abbas Thaif">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/454938801_10234422331722376_3820133127477187806_n-1024x768.jpg" alt="Masjid Ibnu Abbas Thaif" loading="lazy">
+            <figcaption>Masjid Ibnu Abbas Thaif</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/460241751_10234864595378691_1426897041241797453_n-1024x768.jpg" data-caption="Masjid Quba" aria-label="Perbesar foto: Masjid Quba">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/460241751_10234864595378691_1426897041241797453_n-1024x768.jpg" alt="Masjid Quba" loading="lazy">
+            <figcaption>Masjid Quba</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/465011944_10235401358397431_1897052225177370659_n-1024x768.jpg" data-caption="Jabal Tsur" aria-label="Perbesar foto: Jabal Tsur">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/465011944_10235401358397431_1897052225177370659_n-1024x768.jpg" alt="Jabal Tsur" loading="lazy">
+            <figcaption>Jabal Tsur</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="ziarah">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/464914170_10235401361917519_5649072721520965871_n-1024x768.jpg" data-caption="Jabal Rahmah" aria-label="Perbesar foto: Jabal Rahmah">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/464914170_10235401361917519_5649072721520965871_n-1024x768.jpg" alt="Jabal Rahmah" loading="lazy">
+            <figcaption>Jabal Rahmah</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/468939353_10236432574577191_1450811296598192823_n-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/468939353_10236432574577191_1450811296598192823_n-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471260418_10236562738511208_7637513600829480350_n-1024x576.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471260418_10236562738511208_7637513600829480350_n-1024x576.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471569145_10236562739151224_4078821633438319527_n-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471569145_10236562739151224_4078821633438319527_n-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="pelatihan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471850990_10236610301020241_7827951579009081381_n-1024x576.jpg" data-caption="Pelatihan Tour Leader" aria-label="Perbesar foto: Pelatihan Tour Leader">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471850990_10236610301020241_7827951579009081381_n-1024x576.jpg" alt="Pelatihan Tour Leader" loading="lazy">
+            <figcaption>Pelatihan Tour Leader</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="pelatihan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471997625_10236610301700258_566199699658075276_n-1024x576.jpg" data-caption="Pelatihan Tour Leader" aria-label="Perbesar foto: Pelatihan Tour Leader">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471997625_10236610301700258_566199699658075276_n-1024x576.jpg" alt="Pelatihan Tour Leader" loading="lazy">
+            <figcaption>Pelatihan Tour Leader</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471949537_10236616621498249_1118311480147409404_n-1024x576.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471949537_10236616621498249_1118311480147409404_n-1024x576.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="keberangkatan">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/471987166_10236616622178266_6222530666108753083_n-1024x768.jpg" data-caption="Keberangkatan" aria-label="Perbesar foto: Keberangkatan">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/471987166_10236616622178266_6222530666108753083_n-1024x768.jpg" alt="Keberangkatan" loading="lazy">
+            <figcaption>Keberangkatan</figcaption>
+        </button>
+    </figure>
+    <figure class="galeri-item" data-category="plus">
+        <button type="button" class="galeri-link" data-full="https://umrahbisa.com/wp-content/uploads/2025/01/425432904_10233139289847131_2098466153047825378_n-1024x765.jpg" data-caption="Umrah Plus Turki" aria-label="Perbesar foto: Umrah Plus Turki">
+            <img src="https://umrahbisa.com/wp-content/uploads/2025/01/425432904_10233139289847131_2098466153047825378_n-1024x765.jpg" alt="Umrah Plus Turki" loading="lazy">
+            <figcaption>Umrah Plus Turki</figcaption>
+        </button>
+    </figure>
+</div>
+
+</div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section pt-0" id="contact">
+<div class="container">
+<div class="contact-box">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+            <span class="section-label section-label-light">Ikut Berangkat</span>
+            <h2 class="contact-title">Jadi bagian dari perjalanan berikutnya</h2>
+            <p class="contact-desc mb-0">
+                Konsultasikan paket dan jadwal keberangkatan Anda bersama tim kami.
+            </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+            <a href="https://wa.me/628159888154?text=Assalamualaikum%20Boleh%20info%20lebih%20lanjut%20untuk%20paket%20umrahnya%3F"
+                class="btn btn-umrah btn-lg-custom" target="_blank" rel="noopener">Chat WhatsApp</a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container text-center">
+<p class="mb-0">&copy; 2026 PT. Alzam Mandiri Wisata. Semua BISA Umrah.</p>
+</div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="modal fade" id="lightbox" tabindex="-1" aria-label="Foto galeri" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-xl">
+<div class="modal-content lightbox-content">
+    <button type="button" class="lightbox-close" data-bs-dismiss="modal" aria-label="Tutup">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto sebelumnya">&#8249;</button>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">&#8250;</button>
+    <img src="" alt="" id="lightboxImg" class="lightbox-img">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/galeri.js"></script>
+</body>
+</html>
