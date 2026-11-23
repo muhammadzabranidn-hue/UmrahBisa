@@ -1,0 +1,205 @@
+/* =====================================================
+   ABOUT US (pages/about.html)
+   Hanya style khusus halaman About. Style bersama ada di base.css.
+   ===================================================== */
+
+/* ---------- Header (gambar) ---------- */
+.about-hero-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .12);
+}
+
+.about-hero-badge {
+    position: absolute;
+    left: -1.5rem;
+    bottom: 2rem;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.about-hero-badge small {
+    display: block;
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--text-body);
+}
+
+.about-hero-badge strong {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+/* ---------- Layanan ---------- */
+.service-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 1.75rem;
+    padding: 2rem 1.75rem 1.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .12);
+}
+
+.service-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--red-price);
+    margin-bottom: 1.25rem;
+}
+
+.service-text {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+/* ---------- Legalitas ---------- */
+.legal-list {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.legal-card {
+    background-color: var(--bg-cream);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .07);
+}
+
+.legal-tag {
+    display: inline-block;
+    background-color: var(--green-dark);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .3rem .8rem;
+    border-radius: 2rem;
+    margin-bottom: .75rem;
+}
+
+.legal-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: .5rem;
+}
+
+.legal-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--red-price);
+    margin-bottom: .5rem;
+    overflow-wrap: anywhere;
+}
+
+.legal-note {
+    font-size: .95rem;
+    color: var(--text-body);
+    margin-bottom: .75rem;
+}
+
+.legal-link {
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.legal-link:hover {
+    color: var(--green-brand);
+    text-decoration: underline;
+}
+
+.doc-card {
+    margin: 0;
+    background-color: var(--bg-cream);
+    border-radius: 1.75rem;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.doc-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.doc-card figcaption {
+    padding: .9rem .5rem .25rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--text-body);
+    text-align: center;
+}
+
+.doc-card-portrait {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Kantor pusat ---------- */
+.office-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+}
+
+.office-box .contact-list {
+    flex-grow: 1;
+}
+
+.office-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 1.5rem;
+}
+
+.map-frame {
+    min-height: 22rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+.map-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 22rem;
+    border: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 991.98px) {
+    .about-hero-img {
+        aspect-ratio: 16 / 11;
+    }
+
+    .about-hero-badge {
+        left: 1rem;
+        bottom: 1rem;
+    }
+}

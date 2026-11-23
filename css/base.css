@@ -1,0 +1,281 @@
+/* =====================================================
+   BASE - style bersama
+   Dimuat di SEMUA halaman. Berisi variabel warna, tipografi, navbar,
+   tombol, komponen umum, page header halaman dalam, contact box, dan footer.
+   ===================================================== */
+
+/* ---------- Dasar (variabel, tipografi, logo) ---------- */
+:root {
+    --bg-cream: #fffcf5;
+    --green-dark: #0b4f1f;
+    --green-brand: #6fa100;
+    --green-brand-hover: #5c8700;
+    --red-price: #a80000;
+    --text-dark: #0a0a0a;
+    --text-body: #1c1c1c;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-body);
+}
+
+#logo {
+    width: 150px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* ---------- Navbar & tombol WhatsApp ---------- */
+.navbar {
+    background-color: var(--bg-cream);
+    padding: 1.25rem 0;
+}
+
+.navbar .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+    color: var(--green-brand);
+}
+
+.btn-wa {
+    background-color: var(--green-dark);
+    color: #fff;
+    font-weight: 500;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    border: 2px solid var(--green-dark);
+    transition: ease-in-out .2s;
+}
+
+.btn-wa:hover,
+.btn-wa:focus-visible {
+    background-color: transparent;
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+    transform: translateY(-2px);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible,
+.navbar .nav-link.active {
+    color: var(--green-brand);
+}
+
+/* ---------- Komponen umum ---------- */
+.btn-umrah {
+    background-color: var(--green-brand);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: .85rem 1.1rem;
+    border-radius: .5rem;
+    border: none;
+    transition: background-color .2s ease;
+}
+
+.btn-umrah:hover,
+.btn-umrah:focus-visible {
+    background-color: var(--green-brand-hover);
+    color: #fff;
+}
+
+.package-label {
+    display: block;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: .25rem;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section-alt {
+    background-color: #fff;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--green-brand);
+    margin-bottom: .75rem;
+}
+
+.section-label-light {
+    color: #bfe36a;
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+    max-width: 40rem;
+}
+
+.section-desc {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-body);
+    max-width: 36rem;
+}
+
+.stat-item {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .07);
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--red-price);
+    margin-bottom: .35rem;
+}
+
+.stat-item span {
+    font-size: .9rem;
+    color: var(--text-body);
+}
+
+.btn-lg-custom {
+    padding: 1rem 1.6rem;
+}
+
+/* ---------- Page header (halaman dalam) ---------- */
+.page-header {
+    padding: 3rem 0 3.5rem;
+}
+
+.page-breadcrumb {
+    --bs-breadcrumb-divider-color: var(--text-body);
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+
+.page-breadcrumb a {
+    color: var(--text-body);
+    text-decoration: none;
+}
+
+.page-breadcrumb a:hover {
+    color: var(--green-brand);
+}
+
+.page-breadcrumb .active {
+    color: var(--green-dark);
+    font-weight: 500;
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+}
+
+/* ---------- Contact box ---------- */
+.contact-box {
+    background-color: var(--green-dark);
+    border-radius: 2rem;
+    padding: 4rem 3rem;
+    color: #fff;
+}
+
+.contact-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.contact-desc {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.contact-list li:last-child {
+    border-bottom: 0;
+}
+
+.contact-list span {
+    display: block;
+    font-size: .85rem;
+    color: #bfe36a;
+    margin-bottom: .25rem;
+}
+
+.contact-list a,
+.contact-list p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding: 1.5rem 0 2rem;
+    font-size: .9rem;
+    color: var(--text-body);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 991.98px) {
+    .navbar .btn-wa {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .contact-box {
+        padding: 2.5rem 1.5rem;
+    }
+}
