@@ -1,22 +1,22 @@
 # UmrahBISA
 
-Website landing page untuk **UmrahBISA** (*Semua BISA Umrah*), brand travel umrah dari **PT. Alzam Mandiri Wisata**. Dibuat sebagai Final Project dengan HTML, CSS, dan Bootstrap 5, serta responsive untuk desktop, tablet, dan mobile.
+Website company profile untuk **UmrahBISA** (*Semua BISA Umrah*), brand travel umrah dari **PT. Alzam Mandiri Wisata**. Dibuat sebagai Final Project dengan HTML, CSS, dan Bootstrap 5. Tampilannya responsive untuk desktop, tablet, dan mobile.
 
 ## Halaman
 
-| Halaman | File | Isi |
-|---|---|---|
-| Beranda | `index.html` | Hero, About, 3 kartu paket umrah, FAQ, dan Contact |
-| About Us | `pages/about.html` | Layanan, legalitas (PPIU dan PIHK), kantor pusat, dan peta |
-| Paket Umrah | `pages/paket-umrah.html` | Brosur paket aktif, grup WhatsApp promo, dan kontak CS |
-| Daftar Agen | `pages/daftar-agen.html` | Daftar 33 agen dengan pencarian dan tombol WhatsApp |
+| Halaman | File | CSS khusus | Isi |
+|---|---|---|---|
+| Beranda | `index.html` | `css/main.css` | Hero, About, 3 kartu paket umrah, FAQ, dan Contact |
+| About Us | `pages/about.html` | `css/about.css` | Layanan, legalitas (PPIU dan PIHK), kantor pusat, dan peta |
+| Paket Umrah | `pages/paket-umrah.html` | `css/paket-umrah.css` | Brosur paket aktif, grup WhatsApp promo, dan kontak CS |
+| Daftar Agen | `pages/daftar-agen.html` | `css/daftar-agen.css` | 33 agen dengan pencarian dan tombol WhatsApp |
 
 ## Fitur
 
 - Desain konsisten di semua halaman (warna, tipografi, dan komponen kartu yang sama)
 - Navbar sticky dengan menu hamburger di mobile
 - Pencarian agen secara langsung (JavaScript, tanpa library tambahan)
-- Tombol WhatsApp dengan pesan otomatis di setiap paket dan agen
+- Tombol WhatsApp dengan pesan otomatis
 - FAQ memakai accordion Bootstrap
 - Google Maps tertanam di halaman About
 
@@ -35,7 +35,13 @@ FinalProject/
 ├── index.html
 ├── README.md
 ├── css/
-│   └── main.css
+│   ├── base.css            # style bersama, dimuat di semua halaman
+│   ├── main.css            # khusus beranda
+│   ├── about.css           # khusus halaman About
+│   ├── paket-umrah.css     # khusus halaman Paket Umrah
+│   └── daftar-agen.css     # khusus halaman Daftar Agen
+├── js/
+│   └── app.js              # pencarian agen (halaman Daftar Agen)
 ├── pages/
 │   ├── about.html
 │   ├── daftar-agen.html
@@ -45,6 +51,25 @@ FinalProject/
         ├── LogoUmrahBisa.png
         └── hero-image.jpg
 ```
+
+## Struktur CSS
+
+CSS dipisah per halaman supaya mudah dibaca dan dirawat. Setiap halaman memuat dua file: `base.css` lebih dulu, lalu CSS miliknya sendiri.
+
+```html
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/about.css">
+```
+
+| File | Isi |
+|---|---|
+| `base.css` | Variabel warna (`:root`), font, navbar, tombol, komponen umum, page header halaman dalam, contact box, dan footer |
+| `main.css` | Hero, About, kartu paket, dan FAQ khusus beranda |
+| `about.css` | Gambar header, kartu layanan, legalitas, kantor pusat, dan peta |
+| `paket-umrah.css` | Brosur paket dan kotak informasi |
+| `daftar-agen.css` | Kolom pencarian dan kartu agen |
+
+Aturan pembagiannya: kalau sebuah style dipakai di dua halaman atau lebih, letakkan di `base.css`. Kalau hanya dipakai satu halaman, letakkan di CSS halaman itu. Warna utama ada di `:root` pada `base.css`, jadi cukup diubah di satu tempat.
 
 ## Cara Menjalankan
 
@@ -65,12 +90,11 @@ Koneksi internet diperlukan karena Bootstrap, font, dan sebagian gambar dimuat d
 
 Beberapa bagian masih berupa placeholder dan perlu diganti sebelum website dipublikasikan:
 
-- [ ] Nomor WhatsApp `62XXXXXXXXXX` di `index.html` (tombol navbar, paket, dan contact)
-- [ ] Harga, fasilitas, dan nama paket di 3 kartu `index.html` masih contoh
+- [ ] Nomor WhatsApp `62XXXXXXXXXX` di `index.html` (navbar, kartu paket, dan contact)
+- [ ] Harga, fasilitas, dan nama paket di kartu `index.html` masih contoh
 - [ ] Email, alamat, dan jam operasional di bagian Contact `index.html`
 - [ ] Gambar dokumen legalitas di `about.html` dan brosur di `paket-umrah.html` masih diambil dari `umrahbisa.com`. Unduh ke `assets/img/` lalu ganti `src`-nya
 - [ ] Foto bagian About di `index.html`
-- [ ] Menu navbar `index.html` disesuaikan dengan halaman di folder `pages/`
 
 ## Menambah Agen Baru
 
@@ -78,7 +102,7 @@ Buka `pages/daftar-agen.html`, lalu salin satu blok `<div class="col-md-6 col-lg
 
 ## Sumber Konten
 
-Konten teks dan data (daftar agen, legalitas, alamat kantor) diambil dari website resmi [umrahbisa.com](https://umrahbisa.com) dan seluruh hak atas konten tersebut dimiliki oleh PT. Alzam Mandiri Wisata.
+Konten teks dan data (daftar agen, legalitas, alamat kantor) diambil dari website resmi [umrahbisa.com](https://umrahbisa.com). Seluruh hak atas konten tersebut dimiliki oleh PT. Alzam Mandiri Wisata.
 
 ## Lisensi
 
