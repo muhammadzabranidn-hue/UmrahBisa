@@ -1,0 +1,114 @@
+/* =====================================================
+   DAFTAR AGEN (pages/daftar-agen.html)
+   Hanya style khusus halaman Daftar Agen. Style bersama ada di base.css.
+   ===================================================== */
+
+/* ---------- Pencarian ---------- */
+.agent-search .form-control {
+    height: 3.5rem;
+    padding: 0 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    background-color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    transition: border-color .2s ease-in-out;
+}
+
+.agent-search .form-control:focus {
+    border-color: var(--green-brand);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}
+
+.agent-count {
+    margin: .75rem 0 0 1.5rem;
+    font-size: .9rem;
+    color: var(--text-body);
+}
+
+/* ---------- Kartu agen ---------- */
+.agent-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1.75rem;
+    padding: 1.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.agent-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .12);
+}
+
+.agent-number {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--red-price);
+}
+
+.agent-city {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    padding-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.agent-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--green-dark);
+    margin-bottom: .5rem;
+}
+
+.agent-org {
+    align-self: flex-start;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--green-dark);
+    background-color: #eef6d8;
+    padding: .25rem .75rem;
+    border-radius: 2rem;
+}
+
+.agent-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: auto;
+    padding-top: 1.25rem;
+}
+
+.agent-phone {
+    display: block;
+    text-align: center;
+    font-size: .95rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--green-brand);
+    padding: .65rem 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: background-color .2s ease;
+}
+
+.agent-phone:hover,
+.agent-phone:focus-visible {
+    background-color: var(--green-brand-hover);
+    color: #fff;
+}
+
+.agent-empty {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 3rem 0;
+    color: var(--text-body);
+}
